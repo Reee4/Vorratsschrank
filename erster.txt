@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Dein Vorratsschrank</title>
+</head>
+<body>
+  <header>
+    <h1>Dein Vorratsschrank</h1>
+  </header>
+  <main>
+    <section id="einbuchen">
+      <h2>Lebensmittel einbuchen</h2>
+      <form action="/einbuchen" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="number" name="menge" placeholder="Menge">
+        <input type="submit" value="Einbuchen">
+      </form>
+    </section>
+    <section id="abbuchen">
+      <h2>Lebensmittel abbuchen</h2>
+      <form action="/abbuchen" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="number" name="menge" placeholder="Menge">
+        <input type="submit" value="Abbuchen">
+      </form>
+    </section>
+    <section id="vorrat">
+      <h2>Aktueller Vorrat</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Menge</th>
+          </tr>
+        </thead>
+        <tbody>
+          </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>© Slipping Panda 2023</p>
+  </footer>
+</body>
+</html>
